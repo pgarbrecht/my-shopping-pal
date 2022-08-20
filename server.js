@@ -2,7 +2,6 @@
 const { prototype } = require('events');
 const express = require('express');
 const app = express();
-const Items = require('./models/items.js');
 const methodOverride = require('method-override');
 
 //Environment Variables
@@ -17,11 +16,15 @@ mongoose.connection.once('open', () => {
 	console.log('connected to mongo');
 });
 
-// MIDDLEWARE
+// Middleware
 app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(methodOverride('_method'));
+
+//connect controllers for route logic
+const itemController = require('./controllers/itemController.js')
+app.use('/items', itemController);
 
 // Default
 app.get('/', (req, res) => {
