@@ -1,6 +1,8 @@
-<h1>To buy:</h1>
+<%- include('./partials/header.ejs') %>
+    <div class="index-container">
+    <h1>To buy:</h1>
 
-    <ul>
+    <ul class="index-item-list">
       <% for(let i = 0; i < items.length; i++) {
       %>
         <li>
@@ -11,3 +13,12 @@
          </li>
       <% } %>
     </ul>
+
+    <form class="index-add-form" method="POST" action="/items">
+          <label for="name">Add item:&nbsp;</label>
+          <input type="text" name="name" placeholder="Enter item name here">
+          <button><b>+</b></button>
+    </form>
+    </div>
+    </body>
+</html>

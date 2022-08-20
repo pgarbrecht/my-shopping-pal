@@ -1,0 +1,22 @@
+/*Index page styling*/
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-item-list {
+    margin-top: -10px;
+    border: solid 2px black;
+    height: 50vh;
+    width: 50vw;
+}
+
+.index-add-form {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
