@@ -14,6 +14,11 @@
     width: 50vw;
 }
 
+.index-item {
+    display: flex;
+    flex-direction: row;
+}
+
 .index-add-form {
     width: 300px;
     display: flex;
