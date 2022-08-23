@@ -12,7 +12,7 @@ mongoose
 // Schema for each item
 const itemSchema = new mongoose.Schema({
 	name: { type: String, required: true },
-	notes: { type: String, required: false, default: 'Select edit to add notes for this item' },
+	notes: { type: String, required: false, default: 'Select the pencil icon to add notes for this item' },
 });
 
 // Model based on schema

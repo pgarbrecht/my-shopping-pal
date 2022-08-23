@@ -1,0 +1,13 @@
+<%- include('./partials/header.ejs') %>
+    <div class="edit-flexbox">
+    <h1 class="edit-title"> Edit <%=item.name%> </h1>
+    <form class="edit-form" action="/items/<%= item.id %>?_method=PUT" method="POST">
+        <div> Name: <input type="text" name="name" value="<%=item.name%>"/> </div>
+        <br>
+        <div> Notes: <textarea type="text" name="notes"> <%=item.notes%> </textarea> </div> 
+        <br>
+        <input type="submit" name="" value="Submit Changes"/>
+    </form>
+    </div>
+</body>
+</html>

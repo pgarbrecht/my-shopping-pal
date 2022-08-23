@@ -7,8 +7,9 @@
       %>
         <li class="index-item">
           <form action="/items/<%=items[i].id%>?_method=DELETE" method="POST">
-                <input type="submit" value="✓" />  
+                <input type="submit" value="✔️" />  
           </form>
+          &nbsp;
           <a href="/items/<%= items[i].id %>"> <%= items[i].name %> </a>
          </li>
       <% } %>

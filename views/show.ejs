@@ -4,8 +4,12 @@
     <h1> <%= item.name %> </h1>
     &nbsp;
     <form action="/items/<%=item.id%>?_method=DELETE" method="POST">
-        <input type="submit" value="✓" />  
+        <input type="submit" value="✔️" />  
     </form>
+    &nbsp;
+    <a href="/items/<%=item.id%>/edit">
+        <button>✏️</button>
+    </a>
     </div>
     <img class="item-image" src="/images/bag.png">
     <p> <%= item.notes %> </p>

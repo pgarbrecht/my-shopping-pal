@@ -36,4 +36,18 @@ router.delete('/:id', (req, res) => {
 	})
 })
 
+// EDIT
+router.get('/:id/edit', (req, res) => {
+	Items.findById(req.params.id, (err, foundItem) => {
+		res.render('edit.ejs', {item: foundItem})
+	})
+})
+
+// UPDATE
+router.put('/:id', (req, res) => {
+	Items.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedModel) => {
+		res.redirect('/items')
+	})
+})
+
 module.exports = router
