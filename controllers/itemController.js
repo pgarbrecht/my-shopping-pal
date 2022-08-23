@@ -2,10 +2,18 @@ const express = require('express');
 const router = express.Router()
 const Items = require('../models/items.js')
 
-// INDEX - ASYNC & AWAIT
+// INDEX 
 router.get('/', async (req, res) => {
 	let items = await Items.find({});
 	res.render('index.ejs', { items });
+});
+
+// SHOW
+router.get('/:id', async (req, res) => {
+	const item = await Items.findById(req.params.id);
+	res.render('show.ejs', {
+		item: item,
+	});
 });
 
 // CREATE

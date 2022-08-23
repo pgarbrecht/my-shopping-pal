@@ -25,3 +25,22 @@
     justify-content: center;
     align-items: center;
 }
+
+/*Show page styling*/
+.item-image {
+    width: 15vw;
+}
+
+.show-flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-name-actions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
