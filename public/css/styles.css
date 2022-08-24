@@ -1,5 +1,9 @@
-/*Index page styling*/
+/*Global styling*/
+nav {
+    text-align: center;
+}
 
+/*Index page styling*/
 .index-container {
     display: flex;
     flex-direction: column;
