@@ -1,6 +1,45 @@
 /*Global styling*/
+body {
+    background-color: aliceblue;
+}
+
 nav {
     text-align: center;
+}
+
+.nav-index-text {
+    border: solid 2px #82A3FF;
+    box-shadow: 4px 4px #e4e4e4;
+    padding: 5px;
+    color: #82A3FF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-index-text:hover {
+    background-color: #e9e6e6;
+}
+
+.nav-index-link {
+    text-decoration: none;
+}
+
+h1 {
+    color: #82A3FF;
+}
+
+label {
+    color: #82A3FF;
+    font-weight: 700;
+}
+
+.checkbox {
+    border: solid 1px #82A3FF;
+    border-radius: 7px;
+}
+
+.checkbox:hover {
+    background-color: #f5c7cf;;
 }
 
 /*Index page styling*/
@@ -13,14 +52,25 @@ nav {
 
 .index-item-list {
     margin-top: -10px;
-    border: solid 2px black;
+    border: solid 2px #82A3FF;
     height: 50vh;
     width: 50vw;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    list-style: none;
+    padding-left: 0;
 }
 
 .index-item {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: -15px 0px -15px 0px;
+}
+
+.index-item-text {
+    color: #82A3FF;
 }
 
 .index-add-form {
@@ -29,6 +79,20 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
+hr {
+    height: 2px;
+    border: none;
+    background-color: #e4e4e4;
+}
+
+.plus-btn {
+    border: solid 1px #82A3FF;
+    border-radius: 5px;
+}
+
+.plus-btn:hover {
+    background-color: #c7f5d3;;
 
 /*Show page styling*/
 .item-image {

@@ -6,19 +6,21 @@
       <% for(let i = 0; i < items.length; i++) {
       %>
         <li class="index-item">
+          &nbsp;
           <form action="/items/<%=items[i].id%>?_method=DELETE" method="POST">
-                <input type="submit" value="✔️" />  
+                <input class="checkbox" type="submit" value="✔️" />  
           </form>
           &nbsp;
-          <a href="/items/<%= items[i].id %>"> <%= items[i].name %> </a>
-         </li>
+          <h2><a href="/items/<%= items[i].id %>" class="index-item-text"> <%= items[i].name %> </a></h2>
+        </li>
+        <hr>
       <% } %>
     </ul>
 
     <form class="index-add-form" method="POST" action="/items">
           <label for="name">Add item:&nbsp;</label>
           <input type="text" name="name" placeholder="Enter item name here">
-          <button><b>+</b></button>
+          <button class="plus-btn" ><b>+</b></button>
     </form>
     </div>
     </body>
