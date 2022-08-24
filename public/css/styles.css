@@ -15,6 +15,9 @@ nav {
     color: white;
     font-size: 20px;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-index-text:hover {
@@ -49,7 +52,7 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
 .index-item-list {
@@ -121,7 +124,7 @@ hr {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 25vh;
+    margin-top: 35vh;
 }
 
 .show-name-actions-container {
@@ -141,7 +144,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
 
 .edit-form {
