@@ -56,7 +56,7 @@ label {
     margin-top: -10px;
     border: solid 2px #82A3FF;
     height: 50vh;
-    width: 50vw;
+    width: 75vw;
     overflow-y: scroll;
     overflow-x: scroll;
     list-style: none;
@@ -108,7 +108,7 @@ hr {
 }
 
 .add-btn:hover {
-    background-color: #c7f5d3;;
+    background-color: #c7f5d3;
 }
 
 /*Show page styling*/
