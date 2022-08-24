@@ -43,20 +43,13 @@ label {
     background-color: #f5c7cf;;
 }
 
-.index-container {
-    margin-top: 5vh;
-}
-
-.show-flexbox, .edit-flexbox {
-    margin-top: 25vh;
-}
-
 /*Index page styling*/
 .index-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5vh;
 }
 
 .index-item-list {
@@ -114,6 +107,7 @@ hr {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 25vh;
 }
 
 .show-name-actions-container {
@@ -123,12 +117,17 @@ hr {
     align-items: center;
 }
 
+.edit-btn:hover {
+    background-color: #f4f5c7;
+}
+
 /*Edit page styling*/
 .edit-flexbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20vh;
 }
 
 .edit-form {
@@ -136,4 +135,25 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    color: #82A3FF;
+    font-weight: 700;
+}
+
+.edit-name, .edit-notes {
+    width: 25vw;
+}
+
+textarea {
+    resize: none;
+    height: 15vh;
+}
+
+.edit-submit-btn {
+    margin: auto;
+    border: solid 2px #82A3FF;
+    border-radius: 7px;
+}
+
+.edit-submit-btn:hover {
+    background-color: #f4f5c7;;
 }
