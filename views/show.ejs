@@ -4,7 +4,7 @@
     <h1> <%= item.name %> </h1>
     &nbsp;
     <form action="/items/<%=item.id%>?_method=DELETE" method="POST">
-        <input class="checkbox" type="submit" value="✔️" />  
+        <button class="checkbox-btn"><span id="checkbox-icon" class="material-symbols-outlined"></span></button>  
     </form>
     &nbsp;
     <a href="/items/<%=item.id%>/edit">

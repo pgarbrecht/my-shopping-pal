@@ -37,13 +37,31 @@ label {
     font-weight: 700;
 }
 
-.checkbox, .edit-btn {
-    border: solid 2px #82A3FF;
-    border-radius: 7px;
+.checkbox-btn, .edit-btn {
+    border: none;
+    background-color: rgb(255, 253, 253);
 }
 
-.checkbox:hover {
-    background-color: #f5c7cf;;
+.checkbox-btn {
+    margin-top: 5px;
+}
+
+/*Checkbox default is for it to be an empty box*/
+#checkbox-icon::before {
+    content:"check_box_outline_blank";
+    color: #82A3FF;
+}
+
+/*checkbox hover state allows desktop users to see clicking will check it off*/
+#checkbox-icon:hover::before {
+    content:"check_box";
+    color: #ff8a82;
+}
+
+/*checkbox active state (aka clicked) provided to show mobile users it was checked*/
+#checkbox-icon:active::before {
+    content:"check_box";
+    color: #ff8a82;
 }
 
 /*Index page styling*/
