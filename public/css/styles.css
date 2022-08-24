@@ -71,16 +71,13 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
 }
 
 .index-item-list {
-    margin-top: -10px;
-    border: solid 2px #82A3FF;
-    height: 50vh;
-    width: 75vw;
-    overflow-y: scroll;
+    width: 100vw;
+    height: 70vh;
     overflow-x: scroll;
+    overflow-y: scroll;
     list-style: none;
     padding-left: 0;
 }
@@ -90,7 +87,7 @@ label {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: -15px 0px -15px 0px;
+    margin: -15px 0px -15px 15px;
 }
 
 .index-item-text {
@@ -106,6 +103,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 25px;
 }
 
 hr {

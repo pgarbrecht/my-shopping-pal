@@ -1,27 +1,24 @@
 <%- include('./partials/header.ejs') %>
     <div class="index-container">
-    <h1>To buy:</h1>
-
-    <ul class="index-item-list">
-      <% for(let i = 0; i < items.length; i++) {
-      %>
-        <li class="index-item">
-          &nbsp;
-          <form action="/items/<%=items[i].id%>?_method=DELETE" method="POST">
-                <button class="checkbox-btn"><span id="checkbox-icon" class="material-symbols-outlined"></span></button>  
-          </form>
-          &nbsp;
-          <h2><a href="/items/<%= items[i].id %>" class="index-item-text"> <%= items[i].name %> </a></h2>
-        </li>
-        <hr>
-      <% } %>
-    </ul>
-
-    <form class="index-add-form" method="POST" action="/items">
-          <label class="add-label" for="name">Add item:&nbsp;</label>
-          <input class="add-input-field" type="text" name="name" placeholder="Enter item name here">
-          <button class="add-btn"><span id="add-btn-icon" class="material-symbols-outlined">add_box</span></button>
-    </form>
+        <form class="index-add-form" method="POST" action="/items">
+            <label class="add-label" for="name">Add item:&nbsp;</label>
+            <input class="add-input-field" type="text" name="name" placeholder="Enter item name here">
+            <button class="add-btn"><span id="add-btn-icon" class="material-symbols-outlined">add_box</span></button>
+        </form>
+        <ul class="index-item-list">
+            <hr>
+        <% for(let i = 0; i < items.length; i++) {%>
+            <li class="index-item">
+            &nbsp;
+            <form action="/items/<%=items[i].id%>?_method=DELETE" method="POST">
+                    <button class="checkbox-btn"><span id="checkbox-icon" class="material-symbols-outlined"></span></button>  
+            </form>
+            &nbsp;
+            <h2><a href="/items/<%= items[i].id %>" class="index-item-text"> <%= items[i].name %> </a></h2>
+            </li>
+            <hr>
+        <% } %>
+        </ul>
     </div>
     </body>
 </html>
