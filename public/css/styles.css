@@ -183,17 +183,17 @@ hr {
     margin-left: -10px;
 } 
 
-/*add button default color is blue*/
+/*edit button default color is blue*/
 #edit-btn-icon::before {
     color: #82A3FF;
 }
 
-/*add button hover state is green to allow desktop users to see clicking will add*/
+/*edit button hover state is orange to allow desktop users to see clicking will edit*/
 #edit-btn-icon:hover {
     color: #ffc982;
 }
 
-/*green add button active state (aka clicked) provided to show mobile users it was added*/
+/*orange edit button active state (aka clicked) provided to show mobile users it was clicked*/
 #edit-btn-icon:active {
     color: #ffc982;
 }
