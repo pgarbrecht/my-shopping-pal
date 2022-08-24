@@ -226,13 +226,18 @@ hr {
     width: 25vw;
 }
 
+.edit-notes-section {
+    display: flex;
+    justify-content: center;
+}
+
 textarea {
     resize: none;
     height: 15vh;
 }
 
 .edit-submit-btn {
-    margin: auto;
+    margin-left: 50px;
     border: solid 2px #82A3FF;
     border-radius: 7px;
 }
