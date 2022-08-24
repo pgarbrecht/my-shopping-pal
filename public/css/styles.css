@@ -37,13 +37,14 @@ label {
     font-weight: 700;
 }
 
-.checkbox-btn, .edit-btn {
+.checkbox-btn, .edit-btn, .add-btn {
     border: none;
     background-color: rgb(255, 253, 253);
 }
 
 .checkbox-btn {
-    margin-top: 5px;
+    margin-top: 10px;
+    font-size: 30px;
 }
 
 /*Checkbox default is for it to be an empty box*/
@@ -118,18 +119,35 @@ hr {
 }
 
 .add-input-field {
-    height: 20px;
+    height: 18px;
     border: solid 2px #82A3FF;
+    padding-left: 5px;
 }
 
 .add-btn {
-    border: solid 2px #82A3FF;
-    border-radius: 5px;
     height: 25px;
 }
 
-.add-btn:hover {
-    background-color: #c7f5d3;
+
+#add-btn-icon {
+    color: #82A3FF;
+    font-size: 30px;
+    margin-top: -3px;
+} 
+
+/*add button default color is blue*/
+#add-btn-icon::before {
+    color: #82A3FF;
+}
+
+/*add button hover state is green to allow desktop users to see clicking will add*/
+#add-btn-icon:hover {
+    color: #82ff82;
+}
+
+/*green add button active state (aka clicked) provided to show mobile users it was added*/
+#add-btn-icon:active {
+    color: #82ff82;
 }
 
 /*Show page styling*/
