@@ -16,6 +16,7 @@ mongoose.connection.once('open', () => {
 	console.log('connected to mongo');
 });
 
+
 // Middleware
 app.use(express.static('public'));
 app.use(express.json());
