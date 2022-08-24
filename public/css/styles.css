@@ -1,6 +1,7 @@
 /*Global styling*/
 body {
     background-color: aliceblue;
+    margin-top: 5%;
 }
 
 nav {
@@ -33,13 +34,21 @@ label {
     font-weight: 700;
 }
 
-.checkbox {
-    border: solid 1px #82A3FF;
+.checkbox, .edit-btn {
+    border: solid 2px #82A3FF;
     border-radius: 7px;
 }
 
 .checkbox:hover {
     background-color: #f5c7cf;;
+}
+
+.index-container {
+    margin-top: 5vh;
+}
+
+.show-flexbox, .edit-flexbox {
+    margin-top: 25vh;
 }
 
 /*Index page styling*/
@@ -87,7 +96,7 @@ hr {
 }
 
 .plus-btn {
-    border: solid 1px #82A3FF;
+    border: solid 2px #82A3FF;
     border-radius: 5px;
 }
 
@@ -103,7 +112,7 @@ hr {
 .show-flexbox {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
