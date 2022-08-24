@@ -88,12 +88,21 @@ hr {
     background-color: #e4e4e4;
 }
 
-.plus-btn {
-    border: solid 2px #82A3FF;
-    border-radius: 5px;
+.add-label {
+    font-size: 20px;
 }
 
-.plus-btn:hover {
+.add-input-field {
+    height: 20px;
+}
+
+.add-btn {
+    border: solid 2px #82A3FF;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.add-btn:hover {
     background-color: #c7f5d3;;
 }
 
