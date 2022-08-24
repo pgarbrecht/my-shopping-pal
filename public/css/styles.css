@@ -171,8 +171,31 @@ hr {
     align-items: center;
 }
 
-.edit-btn:hover {
-    background-color: #f4f5c7;
+.edit-btn {
+    height: 25px;
+}
+
+
+#edit-btn-icon {
+    color: #82A3FF;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: -10px;
+} 
+
+/*add button default color is blue*/
+#edit-btn-icon::before {
+    color: #82A3FF;
+}
+
+/*add button hover state is green to allow desktop users to see clicking will add*/
+#edit-btn-icon:hover {
+    color: #ffc982;
+}
+
+/*green add button active state (aka clicked) provided to show mobile users it was added*/
+#edit-btn-icon:active {
+    color: #ffc982;
 }
 
 /*Edit page styling*/
@@ -208,6 +231,6 @@ textarea {
     border-radius: 7px;
 }
 
-.edit-submit-btn:hover {
-    background-color: #f4f5c7;;
+.edit-submit-btn:hover, .edit-submit-btn:active {
+    background-color: #ffc982;
 }
