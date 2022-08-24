@@ -8,5 +8,23 @@
     "mongodb": "^4.9.0",
     "mongoose": "^6.5.2",
     "nodemon": "^2.0.19"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "my-shopping-pal",
+  "description": "My Shopping Pal",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgarbrecht/my-shopping-pal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgarbrecht/my-shopping-pal/issues"
+  },
+  "homepage": "https://github.com/pgarbrecht/my-shopping-pal#readme"
 }
