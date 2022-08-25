@@ -29,7 +29,7 @@ app.use('/items', itemController);
 
 // Default
 app.get('/', (req, res) => {
-	res.send('server working');
+	res.render('homepage.ejs');
 });
 
 //Run server
