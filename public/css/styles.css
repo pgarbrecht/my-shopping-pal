@@ -196,9 +196,9 @@ hr {
 .show-flexbox {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin-top: 25vh;
+    height: 100vh;
 }
 
 .show-name-actions-container {
@@ -244,12 +244,18 @@ hr {
 }
 
 /*Edit page styling*/
+.edit-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+}
+
 .edit-flexbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 25vh;
 }
 
 .edit-form {
