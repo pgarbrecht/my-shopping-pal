@@ -4,9 +4,9 @@
     <div class="edit-flexbox">
     <h1 class="edit-title"> Edit <%=item.name%> </h1>
     <form class="edit-form" action="/items/<%= item.id %>?_method=PUT" method="POST">
-        <div> Name: <input class="edit-name" type="text" name="name" value="<%=item.name%>"/> </div>
+        <div> <span class="edit-label">Name:</span> <input class="edit-name" type="text" name="name" value="<%=item.name%>"/> </div>
         <br>
-        <div class="edit-notes-section"> Notes:&nbsp;&nbsp; <textarea class="edit-notes" type="text" name="notes"><%=item.notes%></textarea> </div> 
+        <div class="edit-notes-section"> <span class="edit-label">Notes:&nbsp;</span> <textarea class="edit-notes" type="text" name="notes"><%=item.notes%></textarea> </div> 
         <br>
         <input class="edit-submit-btn" type="submit" name="" value="Submit Changes"/>
     </form>

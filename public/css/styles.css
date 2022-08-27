@@ -21,7 +21,6 @@ nav {
 .nav-index-text, .signout {
     padding: 5px;
     color: white;
-    /* font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem); */
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -309,7 +308,6 @@ hr {
 
 #edit-btn-icon {
     color: #82A3FF;
-    /* font-size: 25px; */
     font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
     margin-top: 5px;
     margin-left: -10px;
@@ -366,6 +364,15 @@ hr {
 .edit-name, .edit-notes {
     width: 25vw;
     padding-left: 5px;
+    font-size: clamp(0.5rem, 2vw + 0.2rem, 1.5rem);
+}
+
+.edit-title {
+    font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
+}
+
+.edit-label {
+    font-size: clamp(0.5rem, 3vw + 0.2rem, 2rem);
 }
 
 .edit-notes-section {
@@ -379,8 +386,8 @@ textarea {
 }
 
 .edit-submit-btn {
-    margin-left: 50px;
-    height: 30px;
+    margin: auto;
+    font-size: clamp(0.5rem, 2.5vw + 0.2rem, 1.3rem);
     border: solid 2px #82A3FF;
     border-radius: 5px;
     color: #82A3FF;
