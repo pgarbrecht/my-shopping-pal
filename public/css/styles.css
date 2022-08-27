@@ -109,7 +109,8 @@ label {
 
 .homepage-intro {
     padding: 0% 10% 0% 10%;
-    line-height: 20px;
+    line-height: 24px;
+    font-size: 20px;
 }
 
 .homepage-buttons{
@@ -121,6 +122,10 @@ label {
 
 .back-to-homepage-btn, .back-to-list-btn {
     margin: 20px 0px 0px 35px;
+}
+
+.signin-btn, .create-account-btn {
+    font-size: 20px;
 }
 
 .signin-btn, .create-account-btn, .back-to-homepage-btn, .back-to-list-btn {
@@ -174,6 +179,10 @@ label {
     text-align: center;
 }
 
+.signin-register-label {
+    font-size: 20px;
+}
+
 .signin-username, .signin-password, .register-username, .register-password {
     width: 25vw;
     padding-left: 5px;
@@ -186,6 +195,7 @@ label {
     border-radius: 5px;
     color: #82A3FF;
     background-color: rgb(255, 253, 253);
+    font-size: 20px;
 }
 
 .signin-submit-btn:hover, .register-submit-btn:hover {
@@ -244,7 +254,6 @@ hr {
 }
 
 .add-input-field {
-    /* height: 18px; */
     height: clamp(0.5rem, 3vw + 0.2rem, 2rem);
     border: solid 2px #82A3FF;
     padding-left: 5px;
@@ -256,7 +265,7 @@ hr {
 }
 
 .add-btn {
-    margin-top: 5px;
+    margin-top: 7px;
 }
 
 
@@ -387,7 +396,7 @@ textarea {
 
 .edit-submit-btn {
     margin: auto;
-    font-size: clamp(0.5rem, 2.5vw + 0.2rem, 1.3rem);
+    font-size: clamp(0.5rem, 2.5vw + 0.2rem, 1.8rem);
     border: solid 2px #82A3FF;
     border-radius: 5px;
     color: #82A3FF;
