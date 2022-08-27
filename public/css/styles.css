@@ -363,3 +363,13 @@ textarea {
 .edit-submit-btn:hover, .edit-submit-btn:active {
     background-color: #ffc982;
 }
+
+/*Mobile Styling*/
+@media only screen and (max-width: 600px) {
+    .homepage-flexbox {
+        width: 75vw;
+    }
+    h1, h2, p, label, input, button, .nav-index-text, .signout, .checkbox-btn, .edit-btn {
+        font-size: 3em;
+    }
+  }
