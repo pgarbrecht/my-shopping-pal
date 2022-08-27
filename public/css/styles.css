@@ -137,6 +137,10 @@ label {
     color: #82A3FF;
 }
 
+.back-to-list-btn, .back-to-list-link {
+    font-size: clamp(0.5rem, 2.5vw + 0.2rem, 1.3rem);
+}
+
 .signin-btn:hover, .create-account-btn:hover, .back-to-homepage-btn:hover, .back-to-list-btn:hover {
     background-color: #c9d7fc;
 }
@@ -280,10 +284,6 @@ hr {
 }
 
 /*Show page styling*/
-.item-image {
-    width: 15vw;
-}
-
 .show-flexbox {
     display: flex;
     flex-direction: column;
@@ -299,13 +299,18 @@ hr {
     align-items: center;
 }
 
+.show-page-item-name {
+    font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
+}
+
 .edit-btn {
     height: 25px;
 }
 
 #edit-btn-icon {
     color: #82A3FF;
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
     margin-top: 5px;
     margin-left: -10px;
 } 
@@ -316,6 +321,7 @@ hr {
     width: 50vw;
     height: 25vh;
     overflow-y: scroll;
+    font-size: clamp(0.5rem, 4vw + 0.2rem, 2.5rem);
 }
 
 /*edit button default color is blue*/
