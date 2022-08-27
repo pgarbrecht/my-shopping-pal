@@ -108,11 +108,11 @@ label {
     margin-bottom: 15px;
 }
 
-.back-to-homepage-btn {
-    margin: 20px 0px 0px 20px;
+.back-to-homepage-btn, .back-to-list-btn {
+    margin: 20px 0px 0px 35px;
 }
 
-.signin-btn, .create-account-btn, .back-to-homepage-btn {
+.signin-btn, .create-account-btn, .back-to-homepage-btn, .back-to-list-btn {
     height: 30px;
     border: solid 2px #82A3FF;
     border-radius: 5px;
@@ -120,12 +120,12 @@ label {
     background-color: rgb(255, 253, 253);
 }
 
-.signin-link, .create-account-link, .back-to-homepage-link {
+.signin-link, .create-account-link, .back-to-homepage-link, .back-to-list-link {
     text-decoration: none;
     color: #82A3FF;
 }
 
-.signin-btn:hover, .create-account-btn:hover, .back-to-homepage-btn:hover {
+.signin-btn:hover, .create-account-btn:hover, .back-to-homepage-btn:hover, .back-to-list-btn:hover {
     background-color: #c9d7fc;
 }
 
