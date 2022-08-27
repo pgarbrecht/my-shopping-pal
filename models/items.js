@@ -13,6 +13,7 @@ mongoose
 const itemSchema = new mongoose.Schema({
 	name: { type: String, required: true },
 	notes: { type: String, required: false, default: 'Select the pencil icon to add notes for this item' },
+	username: { type: String},
 });
 
 // Model based on schema

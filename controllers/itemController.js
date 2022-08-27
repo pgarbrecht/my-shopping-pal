@@ -1,11 +1,24 @@
 const express = require('express');
-const router = express.Router()
-const Items = require('../models/items.js')
+
+const Items = require('../models/items.js');
+const User = require('../models/users.js');
+
+const router = express.Router();
+
+// custom middleware to require authentication on routes
+const authRequired = (req, res, next) => {
+	if(req.session.currentUser){
+		next()
+	} else {
+		res.send('You must be logged in to do that!')
+	}
+}
 
 // INDEX 
 router.get('/', async (req, res) => {
 	let items = await Items.find({});
-	res.render('index.ejs', { items });
+    let user = await User.findById(req.session.currentUser._id);
+	res.render('index.ejs', { items, user });
 });
 
 // SHOW

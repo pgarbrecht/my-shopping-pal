@@ -7,10 +7,14 @@ body {
 nav {
     text-align: center;
     background-color:#82A3FF;
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-index-text {
+.nav-index-text, .signout {
     padding: 5px;
     color: white;
     font-size: 20px;
@@ -20,11 +24,11 @@ nav {
     align-items: center;
 }
 
-.nav-index-text:hover {
+.nav-index-text:hover, .signout:hover {
     color: rgb(233, 231, 231);
 }
 
-.nav-index-link {
+.nav-index-link, .signout {
     text-decoration: none;
 }
 
@@ -46,6 +50,7 @@ label {
     margin-top: 10px;
     font-size: 30px;
 }
+
 
 /*Checkbox default is for it to be an empty box*/
 #checkbox-icon::before {
@@ -80,24 +85,27 @@ label {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    border:  5px #82A3FF;
-    border-style: double;
+    border:  3px #82A3FF;
+    border-style: groove;
     border-radius: 5px;
     padding: 15px;
 }
 
 .homepage-title {
     text-align: center;
+    margin-bottom: -5px;
 }
 
 .homepage-intro {
     padding: 0% 10% 0% 10%;
+    line-height: 20px;
 }
 
 .homepage-buttons{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 15px;
 }
 
 .signin-btn, .create-account-btn {
@@ -108,7 +116,60 @@ label {
     background-color: rgb(255, 253, 253);
 }
 
+.signin-link, .create-account-link {
+    text-decoration: none;
+    color: #82A3FF;
+}
+
 .signin-btn:hover, .create-account-btn:hover {
+    background-color: #c9d7fc;
+}
+
+/*Sign in + Register page styling (Same)*/
+
+.signin-container, .register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signin-flexbox, .register-flexbox {
+    border:  3px #82A3FF;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.signin-form, .register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #82A3FF;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.signin-title, .register-title {
+    text-align: center;
+}
+
+.signin-username, .signin-password, .register-username, .register-password {
+    width: 25vw;
+}
+
+.signin-submit-btn, .register-submit-btn {
+    margin: auto;
+    height: 30px;
+    border: solid 2px #82A3FF;
+    border-radius: 5px;
+    color: #82A3FF;
+    background-color: rgb(255, 253, 253);
+}
+
+.signin-submit-btn:hover, .register-submit-btn:hover {
     background-color: #c9d7fc;
 }
 
