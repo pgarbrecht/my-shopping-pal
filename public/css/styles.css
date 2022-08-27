@@ -51,7 +51,6 @@ label {
     font-size: 30px;
 }
 
-
 /*Checkbox default is for it to be an empty box*/
 #checkbox-icon::before {
     content:"check_box_outline_blank";
@@ -285,7 +284,6 @@ hr {
     height: 25px;
 }
 
-
 #edit-btn-icon {
     color: #82A3FF;
     font-size: 25px;
@@ -375,6 +373,5 @@ textarea {
     }
     h2, .add-label, .add-input-field, .add-btn, .index-item, .index-item-text, .nav-index-text, .signout, .checkbox-btn, .edit-btn {
         font-size: 30px;
-        /* font-size: 300%; */
     }
 }
