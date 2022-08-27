@@ -1,5 +1,5 @@
-## Project Choice (Tell us which project you're doing!)
-My Shopping Pal
+## My Shopping Pal
+[View live on Heroku](https://my-shopping-pal.herokuapp.com/)
 
 <hr>
 
