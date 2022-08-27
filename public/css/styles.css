@@ -369,7 +369,7 @@ textarea {
     .homepage-flexbox {
         width: 75vw;
     }
-    h1, h2, label, input, .nav-index-text, .signout, .checkbox-btn, .edit-btn {
+    h1, h2, .nav-index-text, .signout, .checkbox-btn, .edit-btn {
         font-size: 3em;
     }
   }
