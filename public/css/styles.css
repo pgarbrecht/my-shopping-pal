@@ -365,11 +365,11 @@ textarea {
 }
 
 /*Mobile Styling*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     .homepage-flexbox {
         width: 75vw;
     }
-    .add-label, .add-input-field, .add-btn, .index-item, .index-item-text, .nav-index-text, .signout, .checkbox-btn, .edit-btn {
-        font-size: 4em;
+    h2, .add-label, .add-input-field, .add-btn, .index-item, .index-item-text, .nav-index-text, .signout, .checkbox-btn, .edit-btn {
+        font-size: 30px;
     }
-  }
+}
