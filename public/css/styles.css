@@ -108,7 +108,11 @@ label {
     margin-bottom: 15px;
 }
 
-.signin-btn, .create-account-btn {
+.back-to-homepage-btn {
+    margin: 20px 0px 0px 20px;
+}
+
+.signin-btn, .create-account-btn, .back-to-homepage-btn {
     height: 30px;
     border: solid 2px #82A3FF;
     border-radius: 5px;
@@ -116,12 +120,12 @@ label {
     background-color: rgb(255, 253, 253);
 }
 
-.signin-link, .create-account-link {
+.signin-link, .create-account-link, .back-to-homepage-link {
     text-decoration: none;
     color: #82A3FF;
 }
 
-.signin-btn:hover, .create-account-btn:hover {
+.signin-btn:hover, .create-account-btn:hover, .back-to-homepage-btn:hover {
     background-color: #c9d7fc;
 }
 
@@ -371,5 +375,6 @@ textarea {
     }
     h2, .add-label, .add-input-field, .add-btn, .index-item, .index-item-text, .nav-index-text, .signout, .checkbox-btn, .edit-btn {
         font-size: 30px;
+        /* font-size: 300%; */
     }
 }
