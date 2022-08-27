@@ -3,10 +3,30 @@ const { prototype } = require('events');
 const express = require('express');
 const app = express();
 const methodOverride = require('method-override');
+const session = require('express-session');
 
 //Environment Variables
 require('dotenv').config()
 const PORT = process.env.PORT
+
+//Sessions
+//create a session secret variable
+const SESSION_SECRET = process.env.SESSION_SECRET
+//set up the session with our secret
+app.use(
+    session({
+      secret: SESSION_SECRET,
+      resave: false, 
+      saveUninitialized: false 
+    })
+  )
+
+// custom middleware to make currentUser available as
+// a local variable on all ROUTES
+app.use((req, res, next) => {
+	res.locals.currentUser = req.session.currentUser
+	next()
+})
 
 //Set up Mongoose
 const mongoose = require('mongoose');
@@ -26,6 +46,9 @@ app.use(methodOverride('_method'));
 //connect controllers for route logic
 const itemController = require('./controllers/itemController.js')
 app.use('/items', itemController);
+
+const userController = require('./controllers/userController.js')
+app.use('/users', userController)
 
 // Default
 app.get('/', (req, res) => {
