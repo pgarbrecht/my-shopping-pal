@@ -125,7 +125,7 @@ label {
 }
 
 .signin-btn, .create-account-btn {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .signin-btn, .create-account-btn, .back-to-homepage-btn, .back-to-list-btn {
@@ -163,6 +163,7 @@ label {
     border-style: groove;
     border-radius: 5px;
     padding: 15px;
+    margin-top: -100px;
 }
 
 .signin-form, .register-form {
@@ -267,7 +268,6 @@ hr {
 .add-btn {
     margin-top: 7px;
 }
-
 
 #add-btn-icon {
     color: #82A3FF;
