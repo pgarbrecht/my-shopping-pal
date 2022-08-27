@@ -14,14 +14,26 @@ nav {
     align-items: center;
 }
 
+#cart-logo {
+    font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
+}
+
 .nav-index-text, .signout {
     padding: 5px;
     color: white;
-    font-size: 20px;
+    /* font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem); */
     font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.nav-index-text {
+    font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
+}
+
+.signout {
+    font-size: clamp(0.5rem, 3vw + 0.2rem, 2rem);
 }
 
 .nav-index-text:hover, .signout:hover {
@@ -55,6 +67,7 @@ label {
 #checkbox-icon::before {
     content:"check_box_outline_blank";
     color: #82A3FF;
+    font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
 }
 
 /*checkbox hover state allows desktop users to see clicking will check it off*/
@@ -203,6 +216,7 @@ label {
 
 .index-item-text {
     color: #82A3FF;
+    font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
 }
 
 .index-item-text:hover {
@@ -210,7 +224,6 @@ label {
 }
 
 .index-add-form {
-    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,23 +237,29 @@ hr {
 }
 
 .add-label {
-    font-size: 20px;
+    font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
 }
 
 .add-input-field {
-    height: 18px;
+    /* height: 18px; */
+    height: clamp(0.5rem, 3vw + 0.2rem, 2rem);
     border: solid 2px #82A3FF;
     padding-left: 5px;
+    font-size: clamp(1rem, 2vw + 0.2rem, 1.5rem);
+}
+
+.add-input-field::placeholder {
+    font-size: clamp(1rem, 2vw + 0.2rem, 1.5rem);
 }
 
 .add-btn {
-    height: 25px;
+    margin-top: 5px;
 }
 
 
 #add-btn-icon {
     color: #82A3FF;
-    font-size: 30px;
+    font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
     margin-top: -3px;
     margin-left: -3px;
 } 
@@ -370,8 +389,5 @@ textarea {
 @media only screen and (max-width: 480px) {
     .homepage-flexbox {
         width: 75vw;
-    }
-    h2, .add-label, .add-input-field, .add-btn, .index-item, .index-item-text, .nav-index-text, .signout, .checkbox-btn, .edit-btn {
-        font-size: 30px;
     }
 }
