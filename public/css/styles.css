@@ -100,6 +100,7 @@ label {
     border-style: groove;
     border-radius: 5px;
     padding: 15px;
+    background-image: linear-gradient(to bottom right, rgb(255, 253, 253), #dfe8fd);
 }
 
 .homepage-title {
@@ -164,6 +165,7 @@ label {
     border-radius: 5px;
     padding: 15px;
     margin-top: -100px;
+    background-image: linear-gradient(to bottom right, rgb(255, 253, 253), #dfe8fd);
 }
 
 .signin-form, .register-form {
@@ -370,6 +372,7 @@ hr {
     width: 25vw;
     padding-left: 5px;
     font-size: clamp(0.5rem, 2vw + 0.2rem, 1.5rem);
+    border: solid 2px #82A3FF;
 }
 
 .edit-title {
