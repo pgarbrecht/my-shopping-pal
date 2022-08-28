@@ -6,7 +6,7 @@
     <form class="edit-form" action="/items/<%= item.id %>?_method=PUT" method="POST">
         <div> <span class="edit-label">Name:</span> <input class="edit-name" type="text" name="name" value="<%=item.name%>"/> </div>
         <br>
-        <div> <span class="edit-label">Image:</span> <input class="edit-image" type="text" name="image" value="<%=item.image%>"/> </div>
+        <div class="edit-image-section"> <span class="edit-label">Image:</span> <input class="edit-image" type="text" name="image" value="<%=item.image%>"/> <div class="tooltip"><span id="image-info-symbol" class="material-symbols-outlined">info</span><span class="tooltiptext">Only an image URL is accepted. To get one, search for your item on Google and go to the images tab. If on desktop, right click and choose "Copy Image Address". If on mobile, tap the image once, then tap and hold it and copy the URL in the new page.</span></div> </div>
         <br>
         <div class="edit-notes-section"> <span class="edit-label">Notes:&nbsp;</span> <textarea class="edit-notes" type="text" name="notes"><%=item.notes%></textarea> </div> 
         <br>

@@ -388,12 +388,66 @@ hr {
     border: solid 2px #82A3FF;
 }
 
+.edit-image {
+    margin-left: 2px;
+}
+
 .edit-name, .edit-notes {
     margin-left: 3px;
 }
 
 .edit-title {
     font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
+}
+
+.edit-image-section {
+    display: flex;
+    align-items: center;
+}
+
+#image-info-symbol {
+    font-size: clamp(0.5rem, 3.75vw + 0.2rem, 2.75rem);
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -275px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/*tooltip arrow*/
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: 115px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
 .edit-label {
