@@ -12,7 +12,8 @@ mongoose
 // Schema for each item
 const itemSchema = new mongoose.Schema({
 	name: { type: String, required: true },
-	notes: { type: String, required: false, default:'Select the pencil icon to add notes for this item' },
+	image: { type: String, required: false, default:'http://drive.google.com/uc?export=view&id=1Q9bOnGfHzTcRo7XOEYRVlJgmb9DgMgdv' },
+	notes: { type: String, required: false, default:'Select the pencil icon to add new image or notes for this item' },
 	username: { type: String},
 });
 

@@ -36,7 +36,7 @@ nav {
 }
 
 .nav-index-text:hover, .signout:hover {
-    color: rgb(233, 231, 231);
+    color: #e4e4e4;
 }
 
 .nav-index-link, .signout {
@@ -320,13 +320,18 @@ hr {
     margin-left: -10px;
 } 
 
+.show-page-image {
+    width: 250px;
+}
+
 .show-notes {
     display: flex;
     justify-content: center;
     width: 50vw;
     height: 25vh;
     overflow-y: scroll;
-    font-size: clamp(0.5rem, 4vw + 0.2rem, 2.5rem);
+    font-size: clamp(0.5rem, 3vw + 0.2rem, 2rem);
+    text-align: center;
 }
 
 /*edit button default color is blue*/
@@ -368,11 +373,15 @@ hr {
     font-weight: 700;
 }
 
-.edit-name, .edit-notes {
+.edit-name, .edit-image, .edit-notes {
     width: 25vw;
     padding-left: 5px;
     font-size: clamp(0.5rem, 2vw + 0.2rem, 1.5rem);
     border: solid 2px #82A3FF;
+}
+
+.edit-name, .edit-notes {
+    margin-left: 3px;
 }
 
 .edit-title {
