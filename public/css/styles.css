@@ -143,7 +143,11 @@ label {
 }
 
 .back-to-list-btn, .back-to-list-link {
-    font-size: clamp(0.5rem, 2.5vw + 0.2rem, 1.3rem);
+    font-size: clamp(0.5rem, 3.5vw + 0.2rem, 1.75rem);
+}
+
+.back-to-list-btn {
+    height: clamp(0.5rem, 5vw + 0.2rem, 3rem);
 }
 
 .signin-btn:hover, .create-account-btn:hover, .back-to-homepage-btn:hover, .back-to-list-btn:hover {
@@ -160,6 +164,7 @@ label {
 }
 
 .signin-flexbox, .register-flexbox {
+    width: 50vw;
     border:  3px #82A3FF;
     border-style: groove;
     border-radius: 5px;
@@ -172,7 +177,7 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     color: #82A3FF;
     font-weight: 700;
     padding-bottom: 20px;
@@ -233,6 +238,7 @@ label {
 .index-item-text {
     color: #82A3FF;
     font-size: clamp(0.5rem, 4vw + 0.2rem, 2.5rem);
+    padding-left: 15px;
 }
 
 .index-item-text:hover {
@@ -275,7 +281,7 @@ hr {
     color: #82A3FF;
     font-size: clamp(0.5rem, 5.2vw + 0.2rem, 3.2rem);
     margin-top: -3px;
-    margin-left: -3px;
+    margin-left: 2px;
 } 
 
 /*add button default color is blue*/
@@ -300,6 +306,7 @@ hr {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: -20px;
 }
 
 .show-name-actions-container {
@@ -355,6 +362,7 @@ hr {
         justify-content: center;
         align-items: center;
         height: 80vh;
+        margin-top: -30px;
 }
 
 .edit-flexbox {
@@ -374,7 +382,7 @@ hr {
 }
 
 .edit-name, .edit-image, .edit-notes {
-    width: 25vw;
+    width: 50vw;
     padding-left: 5px;
     font-size: clamp(0.5rem, 2vw + 0.2rem, 1.5rem);
     border: solid 2px #82A3FF;
@@ -404,7 +412,7 @@ textarea {
 
 .edit-submit-btn {
     margin: auto;
-    font-size: clamp(0.5rem, 2.5vw + 0.2rem, 1.8rem);
+    font-size: clamp(0.5rem, 3.5vw + 0.2rem, 2rem);
     border: solid 2px #82A3FF;
     border-radius: 5px;
     color: #82A3FF;
@@ -417,7 +425,7 @@ textarea {
 
 /*Mobile Styling*/
 @media only screen and (max-width: 480px) {
-    .homepage-flexbox {
+    .homepage-flexbox, .signin-flexbox, .register-flexbox {
         width: 75vw;
     }
 }
