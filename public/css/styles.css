@@ -311,10 +311,6 @@ hr {
     font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
 }
 
-/* .edit-btn {
-    height: 25px;
-} */
-
 #edit-btn-icon {
     color: #82A3FF;
     font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
