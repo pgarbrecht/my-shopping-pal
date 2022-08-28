@@ -154,7 +154,7 @@ label {
     background-color: #c9d7fc;
 }
 
-/*Sign in + Register page styling (Same)*/
+/*Sign in + register page styling (Same)*/
 .signin-container, .register-container {
     display: flex;
     flex-direction: column;
