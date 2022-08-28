@@ -415,8 +415,10 @@ hr {
     position: relative;
     display: inline-block;
 }
-  
+
+/*tooltip text*/
 .tooltip .tooltiptext {
+    font-size: 1em;
     visibility: hidden;
     width: 300px;
     background-color: #555;
