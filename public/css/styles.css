@@ -232,7 +232,7 @@ label {
 
 .index-item-text {
     color: #82A3FF;
-    font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
+    font-size: clamp(0.5rem, 4vw + 0.2rem, 2.5rem);
 }
 
 .index-item-text:hover {
@@ -253,7 +253,7 @@ hr {
 }
 
 .add-label {
-    font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
+    font-size: clamp(0.5rem, 4.5vw + 0.2rem, 2.75rem);
 }
 
 .add-input-field {
@@ -273,7 +273,7 @@ hr {
 
 #add-btn-icon {
     color: #82A3FF;
-    font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
+    font-size: clamp(0.5rem, 5.2vw + 0.2rem, 3.2rem);
     margin-top: -3px;
     margin-left: -3px;
 } 
