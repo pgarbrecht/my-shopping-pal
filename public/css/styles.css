@@ -14,6 +14,11 @@ nav {
     align-items: center;
 }
 
+.index-nav-add-fixed {
+    position: sticky;
+    top: 0;
+}
+
 #cart-logo {
     font-size: clamp(0.5rem, 5vw + 0.2rem, 3rem);
 }
@@ -211,20 +216,14 @@ label {
 }
 
 /*Index page styling*/
-.index-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .index-item-list {
     width: 100vw;
-    height: 70vh;
     overflow-x: scroll;
     overflow-y: scroll;
     list-style: none;
     padding-left: 0;
+    margin-bottom: 150px;
+    margin-top: -8px;
 }
 
 .index-item {
@@ -232,7 +231,7 @@ label {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: -15px 0px -15px 25px;
+    margin: -5px 0px -5px 25px;
 }
 
 .index-item-text {
@@ -249,7 +248,9 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgb(255, 253, 253);
 }
 
 hr {
@@ -281,7 +282,6 @@ hr {
     color: #82A3FF;
     font-size: clamp(0.5rem, 5.2vw + 0.2rem, 3.2rem);
     margin-top: -3px;
-    margin-left: 2px;
 } 
 
 /*add button default color is blue*/
