@@ -1,10 +1,12 @@
+//This controller manages routes to sign in or create account and log out
+
+//Set up our variables needed
 const express = require('express')
-const bcrypt = require('bcrypt')
-
+const bcrypt = require('bcrypt') //our encryption tool
 const User = require('../models/users.js')
-
 const router = express.Router()
 
+//REGISTER ROUTE
 router.get('/register', (req, res) => {
   res.render('users/register.ejs')
 })
@@ -27,6 +29,7 @@ router.post('/register', (req, res) => {
     })
   })
   
+  //SIGN IN ROUTE
   router.get('/signin', (req, res) => {
     res.render('users/signin.ejs')
   })
@@ -38,11 +41,10 @@ router.post('/register', (req, res) => {
         const validLogin = bcrypt.compareSync(req.body.password, foundUser.password)
         // compareSync returns true if they match
         // and false if they don't match
-        // if the passwords match, log then in
+        // if the passwords match, log them in
         if (validLogin) {
           req.session.currentUser = foundUser
-          // we are letting session know
-          // that we have logged in
+          // we are letting session know that we have logged in
           res.redirect('/items')
         } else {
           // if they don't match, send a message
@@ -55,9 +57,9 @@ router.post('/register', (req, res) => {
     })
   })
   
-  // DESTROY session route
+  // DESTROY SESSION ROUTE
   router.get('/signout', (req, res) => {
-    // this destroy's the session
+    // this destroys the session
     req.session.destroy()
     res.redirect('/')
   })

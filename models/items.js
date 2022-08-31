@@ -20,5 +20,5 @@ const itemSchema = new mongoose.Schema({
 // Model based on schema
 const Items = mongoose.model('Items', itemSchema);
 
-//Export model for use in server.js
+//Export model for use in controllers
 module.exports = Items;

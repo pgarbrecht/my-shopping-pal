@@ -1,4 +1,4 @@
-/*Global styling*/
+/*GLOBAL STYLING*/
 body {
     background-color: rgb(255, 253, 253);
     margin: 0px;
@@ -86,7 +86,7 @@ label {
     color: #ff8a82;
 }
 
-/*Homepage styling*/
+/*HOMEPAGE STYLING*/
 .homepage-container {
     display: flex;
     justify-content: center;
@@ -159,7 +159,7 @@ label {
     background-color: #c9d7fc;
 }
 
-/*Sign in + register page styling (Same)*/
+/*SIGN IN + REGISTER PAGE STYLING (Same)*/
 .signin-container, .register-container {
     display: flex;
     flex-direction: column;
@@ -215,7 +215,7 @@ label {
     background-color: #c9d7fc;
 }
 
-/*Index page styling*/
+/*INDEX PAGE STYLING*/
 .index-item-list {
     width: 100vw;
     overflow-x: scroll;
@@ -236,7 +236,7 @@ label {
 
 .index-item-text {
     color: #82A3FF;
-    font-size: clamp(0.5rem, 4vw + 0.2rem, 2.5rem);
+    font-size: clamp(0.5rem, 4vw + 0.2rem, 2.5rem); /*Clamp is used to make it desktop and mobile responsive without needing media queries*/
     padding-left: 15px;
 }
 
@@ -356,7 +356,7 @@ hr {
     color: #ffc982;
 }
 
-/*Edit page styling*/
+/*EDIT PAGE STYLING*/
 .edit-container {
         display: flex;
         justify-content: center;
@@ -479,7 +479,7 @@ textarea {
     background-color: #ffc982;
 }
 
-/*Mobile Styling*/
+/*MOBILE STYLING*/
 @media only screen and (max-width: 480px) {
     .homepage-flexbox, .signin-flexbox, .register-flexbox {
         width: 75vw;

@@ -12,16 +12,20 @@
           <a href="/items" class="nav-index-link"><span class="nav-index-text"><span id="cart-logo" class="material-symbols-outlined">shopping_basket</span>&nbsp;My Shopping Pal</span></a>
           <a class="signout" href="/users/signout">Signout</a>
         </nav>
+        <!--Add form is in the index page, to allow user to see and create list in same place -->
         <form class="index-add-form" method="POST" action="/items">
             <label class="add-label" for="name">Add item:&nbsp;</label>
             <input class="add-input-field" type="text" name="name">
-            <input type="hidden" id="username" name="username" value="<%=user.username%>">
+            <!--A hidden input is used to identify that this item being created corresponds only to the current user -->
+            <input type="hidden" id="username" name="username" value="<%=user.username%>"> 
             <button class="add-btn"><span id="add-btn-icon" class="material-symbols-outlined">add_box</span></button>
         </form>
         </div>
         <ul class="index-item-list">
             <hr>
+        <!--For loop reviews all items in the database -->
         <% for(let i = 0; i < items.length; i++) {%>
+            <!--If an item corresponds to the current user, then show it in the list -->
             <% if(items[i].username === user.username) { %>
             <li class="index-item">
             &nbsp;
