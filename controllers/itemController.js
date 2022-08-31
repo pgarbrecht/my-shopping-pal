@@ -28,7 +28,7 @@ router.get('/:id', async (req, res) => {
 		item: item,
 	});
 });
-
+ 
 // CREATE
 router.post('/', (req, res) => {
 	Items.create(req.body, (error, createdItem) => {
