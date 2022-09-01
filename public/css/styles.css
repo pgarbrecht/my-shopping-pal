@@ -277,7 +277,7 @@ hr {
 .add-btn {
     margin-top: 7px;
 }
-
+ 
 #add-btn-icon {
     color: #82A3FF;
     font-size: clamp(0.5rem, 5.2vw + 0.2rem, 3.2rem);
