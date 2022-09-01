@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <a class="back-to-homepage-link" href="/"><button class="back-to-homepage-btn">Back to Homepage</button></a>
+    <div class="register-container">
+    <div class="register-flexbox">
+    <h1 class="register-title">Uh-Oh...</h1>
+    <p class="register-error-description">Sorry, that username is already taken. Please try creating an acccount again with a different username below.</p>
+    <form class="register-form" action="/users/register" method="POST">
+      <div><label class="signin-register-label" for="username">Username:&nbsp;</label><input class="register-username" type="text" name="username"></div>
+      <br>
+      <div><label class="signin-register-label" for="password">Password:&nbsp;&nbsp;</label><input class="register-password" type="password" name="password"></div>
+      <br>
+      <input class="register-submit-btn" type="submit" value="Submit">
+    </form>
+    </div>
+    </div>
+  </body>
+</html>

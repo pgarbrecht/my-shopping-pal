@@ -19,7 +19,7 @@ router.post('/register', (req, res) => {
     // check if somebody else already has this username
     User.findOne({username: req.body.username}, (err, userExists) => {
       if(userExists) {
-        res.send('that username is taken')
+        res.render('users/registererror.ejs')
       } else {
         User.create(req.body, (err, createdUser) => {
           req.session.currentUser = createdUser
@@ -48,11 +48,11 @@ router.post('/register', (req, res) => {
           res.redirect('/items')
         } else {
           // if they don't match, send a message
-          res.send('Invalid username or password')
+          res.render('users/signinerror.ejs')
         }
       } else {
         // if they don't exist, we need to send a message
-        res.send('Invalid username or password')
+        res.render('users/signinerror.ejs')
       }
     })
   })

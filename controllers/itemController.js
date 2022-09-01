@@ -12,7 +12,7 @@ const authRequired = (req, res, next) => {
 	if(req.session.currentUser){
 		next()
 	} else {
-		res.send('You must be logged in to do that!')
+		res.render('users/notsignedin.ejs')
 	}
 }
 
