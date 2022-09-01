@@ -17,14 +17,14 @@ const authRequired = (req, res, next) => {
 }
 
 // INDEX ROUTE
-router.get('/', async (req, res) => {
+router.get('/', authRequired, async (req, res) => {
 	let items = await Items.find({});
     let user = await User.findById(req.session.currentUser._id);
 	res.render('index.ejs', { items, user });
 });
 
 // SHOW ROUTE
-router.get('/:id', async (req, res) => {
+router.get('/:id', authRequired, async (req, res) => {
 	const item = await Items.findById(req.params.id);
 	res.render('show.ejs', {
 		item: item,
@@ -32,7 +32,7 @@ router.get('/:id', async (req, res) => {
 });
  
 // CREATE ROUTE
-router.post('/', (req, res) => {
+router.post('/', authRequired, (req, res) => {
 	Items.create(req.body, (error, createdItem) => {
 		if (error) {
 			console.log('error', error);
@@ -44,7 +44,7 @@ router.post('/', (req, res) => {
 });
 
 // DELETE ROUTE
-router.delete('/:id', (req, res) => {
+router.delete('/:id', authRequired, (req, res) => {
 	Items.findByIdAndRemove(req.params.id, (err, data)=> {
 		if(err) console.log(err)
 		res.redirect('/items')
@@ -52,14 +52,14 @@ router.delete('/:id', (req, res) => {
 })
 
 // EDIT ROUTE
-router.get('/:id/edit', (req, res) => {
+router.get('/:id/edit', authRequired, (req, res) => {
 	Items.findById(req.params.id, (err, foundItem) => {
 		res.render('edit.ejs', {item: foundItem})
 	})
 })
 
 // UPDATE ROUTE
-router.put('/:id', (req, res) => {
+router.put('/:id', authRequired, (req, res) => {
 	Items.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedModel) => {
 		res.redirect('/items')
 	})
