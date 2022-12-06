@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 //Schema for each user
 const userSchema = new mongoose.Schema({
 username: {type: String, required: true, unique: true},
-password: String
+password: {type: String, required: true}
 })
 
 // Model based on schema
